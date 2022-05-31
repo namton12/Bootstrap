@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/* .about */
+.title-header {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.title h3 {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.mt-3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* .book */
+
+.book__img {
+    background: url(../img/banner3.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+    min-height: 615px;
+
+}
+
+.book__img::before {
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.subscribe-cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+.subscribe-cat .subscribe-cat-link {
+    display: block;
+    color: #232121;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.subscribe-cat .subscribe-cat-link:hover {
+    opacity: 0.9;
+}
+
+.book {
+    background-color: #ff6600;
+    overflow: hidden;
+}
+
+.agent-block-image-inf h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    display: block;
+    font-family: 'Pacifico', cursive
+}
+
+.agent-block-image-inf h3 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.agent-block-image-inf p {
+    color: #ffdfc9;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.subscribe-cat-gd .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background: white;
+    line-height: 70px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #ff6600;
+    font-size: 25px;
+}
+
+.subscribe-cat-gd:hover .icon {
+    color: orange;
+}
+
+.subscribe-cat-link {
+    display: block;
+    color: black;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+
+
+
+/* .services */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.box-wrap-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(130, 115, 252, .05);
+    text-align: center;
+    border-radius: 10px;
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.box-wrap {
+    padding: 40px 40px;
+    transition: all 5s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+    background: white;
+    position: relative;
+    border: 1px solid #eee;
+
+}
+
+.box-wrap:hover .icon {
+    color: white;
+    background: #ff6600;
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
+}
+.box-wrap h4 a{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    display: block;
+    color: #232121;
+    transition: all .4s;
+}
+.box-wrap h4 a:hover{
+    color: #ff6600;
+}
+
+
+
+
+
+
+/* .testimonials */
+.testimonials{
+    text-align: center;
+}
+
+.title p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.testimonials .item .item__img img{
+    left: 0px;
+    top: 0px;
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item__content blockquote h3::before{
+    content: ' " ';
+    font-size: 50px;
+    color: #ff6600;
+    display: block;
+    font-family: initial;
+    
+}
+.item__content blockquote h3::after{
+    content: '"';
+    font-size: 25px;
+    
+}
+
+.item__content h3{
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+}
+ 
+
+
+.item__content p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.item__name h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #ff6600;
+}
